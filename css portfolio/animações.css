@@ -1,0 +1,45 @@
+button, a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #687c5e; /* Cor de fundo ao passar o mouse */
+    color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.parallax {
+    background-image: url('sua-imagem.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.texto-animado {
+    animation: slide-in 0.5s ease forwards;
+}

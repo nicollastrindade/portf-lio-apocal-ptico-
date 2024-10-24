@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Nicollas Trindade</title>
+    <link rel="stylesheet" href="././css portfolio/animações.css">
+    <link rel="stylesheet" href="./css portfolio/portifolio.css">
+    <canvas id="folhasCanvas"></canvas>
+</head>
+<body> 
+    <!-- Vídeo de fundo na parte superior -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="./img,videos,aud portifolio/The Last of Us_ Remastered - 4K 60FPS HDR - Main Menu Window - Animation Perfect Loop - AI Upscaled.mp4 " type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        
+        <div class="titulo-descricao">
+            <h1 class="titulo">𝙿𝚘𝚛𝚝𝚏ó𝚕𝚒𝚘 𝚍𝚎 𝙽𝚒𝚌𝚘𝚕𝚕𝚊𝚜 𝚃𝚛𝚒𝚗𝚍𝚊𝚍𝚎</h1>
+            <p>"ᴡʜᴇɴ ʏᴏᴜ ᴀʀᴇ ʟᴏꜱᴛ ɪɴ ᴛʜᴇ ᴅᴀʀᴋɴᴇꜱꜱ... ʟᴏᴏᴋ ꜰᴏʀ ᴛʜᴇ ʟɪɢʜᴛ."
+            </p>
+            <div class="botoes">
+                <a href="#projetos" class="botao">Meus Projetos</a>
+                <a href="#" class="botao botao-play" id="botao-play">Play Trilha</a>
+            </div>                      
+        </div>
+    </div>
+    
+ <div class="gray-section">
+        <!-- Conteúdo da parte cinza -->
+       
+    <!-- Música de fundo -->
+    <audio id="trilha-sonora" autoplay loop>
+        <source src="./img,videos,aud portifolio/The Last Of Us Fingerstyle Guitar Main Theme.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+     
+    <!-- Seção de Projetos -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-container">
+            <h2>𝚄𝚖 𝚙𝚘𝚞𝚌𝚘 𝚜𝚘𝚋𝚛𝚎 𝚖𝚒𝚖</h2>
+            <div class="grid">
+                <!-- Imagem à esquerda -->
+                <div class="sobre-item">
+                    <h3>Quem sou?</h3>
+                    <p>prazer,me chamo nicollas trindade de andrade,nasci em são miguel paulista no dia 24 de dezembro de 2008. E hoje estudo na etec cidade tiradentes no curso de informartica para internet  </p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Seção de Projetos -->
+    <section class="projetos" id="projetos">
+   
+    <div class="projetos-container"> <!-- Div para o quadrado com bordas arredondadas -->
+        <h2>𝙼𝚎𝚞𝚜 𝙿𝚛𝚘𝚓𝚎𝚝𝚘𝚜</h2>
+        <div class="grid">
+            <div class="projeto-item">
+                <h3>top playlist</h3>
+                <p>Você encontrará uma playlist de 10 músicas, contendo um extremo bom gosto com rock e indie.</p>
+                <a href="https://minha-playlist-one.vercel.app/">Acessar</a>
+            </div>
+            <div class="projeto-item">
+                <h3>mangaverse</h3>
+                <p>Você encontrará todos os volumes dos mangás de Kimetsu no Yaiba e Jujutsu Kaisen.</p>
+                <a href="https://mangaverse-six.vercel.app/homemanga.html">Acessar</a>
+            </div>
+            <div class="projeto-item">
+                <h3>viagem a grécia</h3>
+                <p>Um site para aqueles que buscam uma aventura pela Grécia, contendo um guia turístico completo para uma viagem dos sonhos.</p>
+                <a href="https://viagem-para-a-grecia.vercel.app/home.html">Acessar</a>
+            </div>
+            <div class="projeto-item">
+                <h3>currículo</h3>
+                <p>Um "currículo" de Nicollas Trindade de Andrade.</p>
+                <a href="https://curr-culo-lpcb.vercel.app/home.html">Acessar</a>
+            </div>
+            <div class="projeto-item">
+                <h3>pousada</h3>
+                <p>Site para uma pousada em Campos do Jordão chamada "Pousada da Pedra".</p>
+                <a href="https://nicollastrindade.github.io/vercel-definitiv/inicial.html">Acessar</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <!-- Seção de Contato -->
+    
+    <!-- Seção de Contato -->
+    <section class="contato" id="contato">
+        <!-- Carrossel de Contatos -->
+        <div class="contato-carousel-container">
+            <div class="contato-carousel">
+                <h2>𝚎𝚗𝚝𝚛𝚎 𝚎𝚖 𝚌𝚘𝚗𝚝𝚊𝚝𝚘!</h2>
+
+                <!-- Botão Esquerdo -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                
+    
+                <div class="contato-slide">
+                    <a href="https://www.instagram.com/tr_nickk/" target="_blank">
+                        <img src="./img,videos,aud portifolio/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+                <div class="contato-slide">
+                    <a href="mailto:nicollast69@gmail.com">
+                        <img src="./img,videos,aud portifolio/email.png" alt="Email">
+                    </a>
+                </div>
+                <div class="contato-slide">
+                    <a href="https://github.com/nicollastrindade" target="_blank">
+                        <img src="./img,videos,aud portifolio/github.png" alt="GitHub">
+                    </a>
+                </div>
+    
+                <!-- Botão Direito -->
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+    
+            <!-- Indicadores -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <p>Todos os direitos reservados &copy; Nicollas Trindade</p>
+    </footer>
+
+    <script src="./JavaScript/portifolio.js"></script>
+</body>
+</html>

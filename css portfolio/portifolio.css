@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+/* Vídeo de fundo na parte superior */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura total da viewport */
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Título e descrição juntos */
+.titulo-descricao {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Retângulo preto com 50% de opacidade */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Título sobre o vídeo */
+.titulo {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Botões */
+.botoes {
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: #84af4c; /* Verde musgo */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.botao:hover {
+    background-color: #80a045;
+}
+
+.botao-play {
+    background-color: #84af4c; /* Mesmo formato, mas com ícone de play */
+}
+
+.botao-play:before {
+    content: '▶'; /* Ícone de play */
+    margin-right: 5px;
+}
+
+/* Seção de descrição e projetos com fundo cinza escuro */
+.projetos, .contato {
+    background-color: #111111;
+    padding: 40px 10%;
+}
+
+.projetos h2, .contato h2 {
+    
+    margin-left: 1px;
+}
+
+/* Projetos */
+.projetos {
+    margin-top: 20px;
+}
+
+.projetos-container { /* Novo estilo para o container */
+    background-color: #000000; /* Verde musgo */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projeto-item {
+    background: rgba(72, 134, 43, 0.74);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projeto-item h3 {
+    margin-bottom: 10px;
+    
+}
+
+.projeto-item a {
+    color: #74af4c; /* Verde musgo */
+    text-decoration: none;
+}
+
+.projeto-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+.contato {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contato-item {
+    display: flex;
+    justify-content: space-around; /* Para colocar os elementos em horizontal */
+    flex-wrap: wrap;
+}
+
+.contato-item p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.botao-play.playing {
+    background-color: #4e5725; /* Muda a cor do botão quando a música está tocando */
+}
+
+#folhasCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.projetos h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: white; /* Cor do texto do título */
+    margin-left: 300px;
+}
+
+/*sobre min*/
+
+.sobre h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: white; /* Cor do texto do título */
+    margin-left: 260px;
+}
+
+.sobre-item {
+    background: rgba(72, 134, 43, 0.74);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.sobre-item h3 {
+    margin-bottom: 10px;
+}
+
+
+.sobre-item a:hover {
+    text-decoration: underline;
+}
+
+.sobre {
+    margin-top: 20px;
+}
+
+.sobre-container { /* Novo estilo para o container */
+    background-color: #000000; /* Verde musgo */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+}
+
+.sobre, .contato {
+    background-color: #111111;
+    padding: 40px 10%;
+}
+
+.sobre h2, .contato h2 {
+    margin-bottom: 20px;
+}
+
+img{
+    height: 350px;
+    border-radius: 10%;
+}
+
+/*folhas*/
+
+#folhasCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que os elementos abaixo do canvas ainda sejam clicáveis */
+    z-index: 0,01; /* Coloca o canvas atrás de todos os elementos */
+}
+
+.contato {
+    position: relative;
+    overflow: hidden;
+}
+
+.contato-video {
+    position: relative;
+}
+
+.contato-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.contato-carousel {
+    position: relative;
+    z-index: 1; /* Mantém o carrossel acima do vídeo */
+    background-color: rgba(0, 0, 0, 0.2); /* Quadrado preto com 50% de opacidade */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.contato-slide img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Indicadores (bolinhas) */
+.dot-container {
+    text-align: center;
+    margin-top: 20px; /* Ajuste o espaçamento entre o carrossel e as bolinhas */
+    position: relative;
+    z-index: 1; /* Certifique-se de que as bolinhas fiquem acima do vídeo de fundo */
+}
+
+/* Bolinhas (dots) */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: white; /* Indicador ativo mais visível */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Indicadores (bolinhas) */
+.dot-container {
+    text-align: center;
+    margin-top: 20px; /* Ajuste o espaçamento entre o carrossel e as bolinhas */
+    position: relative;
+    z-index: 1; /* Certifique-se de que as bolinhas fiquem acima do vídeo de fundo */
+}
+
+/* Bolinhas (dots) */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: white; /* Indicador ativo mais visível */
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
